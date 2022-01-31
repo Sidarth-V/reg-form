@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Event Registration</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="form">
+        <div class="about">
+          <img src="assets/logo.svg" alt="" />
+          <p>
+            Palette is a design hackathon that is conducted by IEEE-VIT every
+            year. This year it is a 36 hour long online design hack based
+            entirely on the concepts of UI & UX. Fill the form below to
+            register.
+          </p>
+        </div>
+        <form action="index.html">
+          <div class="element">
+            <label for="fullname">1. Please enter you full name</label>
+            <input
+              type="text"
+              name="Full Name"
+              id="fullname"
+              placeholder="Sidarth Venkatesan"
+              required
+            />
+          </div>
+          <br />
+          <div class="element">
+            <label for="email">2. Please enter your email </label>
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="sidarth@gmail.com"
+              required
+            />
+          </div>
+          <br />
+          <div class="element">
+            <label for="phone">3. Enter your phone number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+91 9876543210"
+              required
+            />
+          </div>
+          <br />
+          <div class="element">
+            <p>4. Please select your gender</p>
+            <div>
+              <input type="radio" id="male" name="gender" value="Male" />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" id="female" name="gender" value="Female" />
+              <label for="female">Female</label>
+            </div>
+            <div>
+              <input type="radio" id="other" name="gender" value="Other" />
+              <label for="other">Other</label>
+            </div>
+          </div>
+          <br />
+          <div class="element">
+            <p>5. How did you hear about Palette</p>
+            <div>
+              <input type="radio" id="insta" name="mode" value="Instagram" />
+              <label for="insta">Instagram</label>
+            </div>
+            <div>
+              <input type="radio" id="fb" name="mode" value="Facebook" />
+              <label for="fb">Facebook</label>
+            </div>
+            <div>
+              <input type="radio" id="vit" name="mode" value="VIT" />
+              <label for="vit">VIT</label>
+            </div>
+            <div>
+              <input type="radio" id="mail" name="mode" value="Email" />
+              <label for="mail">Email</label>
+            </div>
+          </div>
+
+          <br />
+          <div class="element">
+            <label for="sofware"
+              >6. Which is your design sofware of choice</label
+            >
+            <select id="software" name="software">
+              <option value="Figma">Figma</option>
+              <option value="Sketch">Adobe Sketch</option>
+              <option value="Photoshop">Adobe Photoshop</option>
+              <option value="Illustrator">Adobe Illustrator</option>
+              <option value="Canva">Canva</option>
+              <option value="inDesign">Adobe InDesign</option>
+            </select>
+          </div>
+
+          <div class="element">
+            <p>7. Any comments you have for us</p>
+            <textarea
+              name="message"
+              rows="10"
+              cols="30"
+              placeholder="Comments"
+            ></textarea>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
